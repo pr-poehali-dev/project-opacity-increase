@@ -3,23 +3,23 @@ import { HighlightedText } from "./HighlightedText"
 
 const philosophyItems = [
   {
-    title: "Минимализм со смыслом",
+    title: "Рядом с морем",
     description:
-      "Каждый элемент имеет свое назначение и пространство для дыхания. Мы убираем лишнее, чтобы раскрыть то, что действительно важно.",
+      "Все апартаменты расположены в нескольких минутах ходьбы от пляжа. Просыпайтесь под звук волн и начинайте день с утреннего купания.",
   },
   {
-    title: "Архитектурный подход",
+    title: "Всё включено",
     description:
-      "Планировки, вдохновленные структурой, ритмом и материальностью. Здания, которые говорят через пропорции и свет.",
+      "Чистое постельное бельё, полотенца, посуда, Wi-Fi и кондиционер — всё уже есть. Приезжайте налегке и просто отдыхайте.",
   },
   {
-    title: "Естественная динамика",
+    title: "Гибкое заселение",
     description:
-      "Движение поддерживает восприятие, но никогда не отвлекает. Анимация, которая ощущается естественно, как свет, скользящий по комнате.",
+      "Заселение от 1 суток. Без посредников и скрытых комиссий — напрямую с хозяином. Договоримся об удобном времени заезда.",
   },
   {
-    title: "Вневременная эстетика",
-    description: "Элегантный, спокойный и долговечный визуальный язык. Дизайн, который превосходит тренды и стареет с достоинством.",
+    title: "Чистота и уют",
+    description: "Каждый гость получает тщательно убранные апартаменты. Мы следим за каждой деталью, чтобы ваш отдых был идеальным.",
   },
 ]
 
@@ -53,17 +53,17 @@ export function Philosophy() {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left column - Title and image */}
           <div className="lg:sticky lg:top-32 lg:self-start">
-            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наша философия</p>
+            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">О нас</p>
             <h2 className="text-6xl md:text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-              Дизайн с
+              Отдых с
               <br />
-              <HighlightedText>намерением</HighlightedText>
+              <HighlightedText>комфортом</HighlightedText>
             </h2>
 
             <div className="relative hidden lg:block">
               <img
                 src="/images/exterior.png"
-                alt="Архитектурный эскиз рабочего пространства"
+                alt="Апартаменты в Анапе"
                 className="opacity-90 relative z-10 w-auto"
               />
             </div>
@@ -72,7 +72,7 @@ export function Philosophy() {
           {/* Right column - Description and Philosophy items */}
           <div className="space-y-6 lg:pt-48">
             <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-12">
-              Архитектура - это больше, чем конструкция. Это то, как мы воспринимаем мир. Мы создаем пространства, которые питают человеческий дух.
+              Мы сдаём уютные апартаменты в Анапе уже более 5 лет. Сотни довольных гостей возвращаются к нам снова — потому что знают: здесь всегда чисто, тепло и по-домашнему.
             </p>
 
             {philosophyItems.map((item, index) => (
