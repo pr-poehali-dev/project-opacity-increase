@@ -137,7 +137,7 @@ export function Hero() {
           transformStyle: "preserve-3d",
         }}
       >
-        <div className="mb-72 md:mb-60 lg:mb-80">
+        <div className="flex flex-col items-center justify-center min-h-screen gap-6 -mt-16">
           <p className="text-sm tracking-[0.3em] uppercase text-center text-secondary mb-0">{"Апартаменты посуточно · Анапа"}</p>
 
           <h1
@@ -149,7 +149,7 @@ export function Hero() {
             <span className="text-orange-200">{"в Анапе"}</span>
           </h1>
 
-          <div className="flex justify-center mt-10">
+          <div className="flex justify-center mt-4">
             <a
               href="#contact"
               className="inline-flex items-center gap-2 bg-white text-foreground px-8 py-4 text-sm tracking-widest uppercase font-medium hover:bg-white/90 transition-colors duration-300"
