@@ -12,12 +12,14 @@ export default function Index() {
     <main className="min-h-screen">
       <Header />
       <Hero />
-      <Philosophy />
-      <Projects />
-      <Expertise />
-      <FAQ />
-      <CallToAction />
-      <Footer />
+      <div className="bg-[hsl(38,55%,88%)]">
+        <Philosophy />
+        <Projects />
+        <Expertise />
+        <FAQ />
+        <CallToAction />
+        <Footer />
+      </div>
     </main>
   )
 }
