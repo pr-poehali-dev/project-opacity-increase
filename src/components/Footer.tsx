@@ -6,20 +6,20 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <a href="/" className="inline-block mb-6">
-              <img src="/images/hously-logo.svg" alt="Пространство" width={120} height={32} className="w-auto h-6" />
+              <img src="/images/hously-logo.svg" alt="AURA Apartments" width={120} height={32} className="w-auto h-6" />
             </a>
             <p className="text-muted-foreground leading-relaxed max-w-sm">
-              Создаем пространства для жизни. Архитектурный опыт, где форма, свет и намерение встречаются.
+              Апартаменты AURA в Анапе — уютный отдых у моря. Посуточная аренда без посредников, оплата через СБП.
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <h4 className="text-sm font-medium mb-4">Студия</h4>
+            <h4 className="text-sm font-medium mb-4">Навигация</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
                 <a href="#projects" className="hover:text-foreground transition-colors">
-                  Проекты
+                  Апартаменты
                 </a>
               </li>
               <li>
@@ -29,12 +29,12 @@ export function Footer() {
               </li>
               <li>
                 <a href="#services" className="hover:text-foreground transition-colors">
-                  Услуги
+                  Удобства
                 </a>
               </li>
               <li>
                 <a href="#contact" className="hover:text-foreground transition-colors">
-                  Контакты
+                  Бронирование
                 </a>
               </li>
             </ul>
@@ -42,16 +42,16 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-sm font-medium mb-4">Связь</h4>
+            <h4 className="text-sm font-medium mb-4">Контакты</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
-                <a href="mailto:hello@prostranstvo.ru" className="hover:text-foreground transition-colors">
-                  hello@prostranstvo.ru
+                <a href="tel:+79000000000" className="hover:text-foreground transition-colors">
+                  +7 (900) 000-00-00
                 </a>
               </li>
               <li>
-                <a href="tel:+74951234567" className="hover:text-foreground transition-colors">
-                  +7 (495) 123-45-67
+                <a href="https://wa.me/79000000000" className="hover:text-foreground transition-colors">
+                  WhatsApp
                 </a>
               </li>
               <li>
@@ -59,10 +59,9 @@ export function Footer() {
                   Телеграм
                 </a>
               </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  ВКонтакте
-                </a>
+              <li className="flex items-center gap-2">
+                <span>Оплата СБП</span>
+                <span className="text-xs bg-foreground text-background px-1.5 py-0.5 rounded">0%</span>
               </li>
             </ul>
           </div>
@@ -70,13 +69,10 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>© 2025 Пространство. Все права защищены.</p>
+          <p>© 2025 AURA Apartments · Анапа. Все права защищены.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-foreground transition-colors">
               Политика конфиденциальности
-            </a>
-            <a href="#" className="hover:text-foreground transition-colors">
-              Условия использования
             </a>
           </div>
         </div>

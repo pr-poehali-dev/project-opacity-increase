@@ -4,35 +4,51 @@ import { ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Студия «Морской бриз»",
-    category: "Студия · до 2 гостей",
+    title: "AURA Espresso",
+    category: "1-комнатная · до 2 гостей",
     location: "Анапа, 5 мин до пляжа",
-    year: "от 2 500 ₽",
-    image: "/images/hously-1.png",
+    price: "от 2 800 ₽/сут",
+    image: "https://cdn.poehali.dev/projects/6a050592-ed7b-4f8b-aadb-e063ad28d256/files/e0a9a028-7b2e-4e0a-8ee6-827ad67a7e3f.jpg",
   },
   {
     id: 2,
-    title: "Апартаменты «Солнечные»",
-    category: "1-комнатные · до 3 гостей",
+    title: "AURA Cappuccino",
+    category: "1-комнатная · до 3 гостей",
     location: "Анапа, ул. Набережная",
-    year: "от 3 500 ₽",
-    image: "/images/hously-2.png",
+    price: "от 3 200 ₽/сут",
+    image: "https://cdn.poehali.dev/projects/6a050592-ed7b-4f8b-aadb-e063ad28d256/files/3e24d9b9-cd27-4234-97d0-ce4a54f9237e.jpg",
   },
   {
     id: 3,
-    title: "Апартаменты «У моря»",
-    category: "2-комнатные · до 5 гостей",
+    title: "AURA Latte",
+    category: "1-комнатная · до 3 гостей",
     location: "Анапа, вид на море",
-    year: "от 5 000 ₽",
-    image: "/images/hously-3.png",
+    price: "от 3 600 ₽/сут",
+    image: "https://cdn.poehali.dev/projects/6a050592-ed7b-4f8b-aadb-e063ad28d256/files/8c660ad5-d0ee-4e0e-b2bb-9855e891724d.jpg",
   },
   {
     id: 4,
-    title: "Семейные апартаменты",
-    category: "3-комнатные · до 7 гостей",
+    title: "AURA Macchiato",
+    category: "1-комнатная · до 4 гостей",
     location: "Анапа, тихий район",
-    year: "от 7 000 ₽",
-    image: "/images/hously-4.png",
+    price: "от 4 000 ₽/сут",
+    image: "https://cdn.poehali.dev/projects/6a050592-ed7b-4f8b-aadb-e063ad28d256/files/223f57c8-24c8-43d6-aa8d-8d9e651c62f8.jpg",
+  },
+  {
+    id: 5,
+    title: "AURA Americano",
+    category: "1-комнатная · до 3 гостей",
+    location: "Анапа, центр",
+    price: "от 3 400 ₽/сут",
+    image: "https://cdn.poehali.dev/projects/6a050592-ed7b-4f8b-aadb-e063ad28d256/files/84f9dc4b-f7a2-47f9-9372-b511f2412394.jpg",
+  },
+  {
+    id: 6,
+    title: "AURA Ristretto",
+    category: "1-комнатная · до 2 гостей",
+    location: "Анапа, пентхаус",
+    price: "от 5 500 ₽/сут",
+    image: "https://cdn.poehali.dev/projects/6a050592-ed7b-4f8b-aadb-e063ad28d256/files/db4ffcac-fe18-4d62-b9c4-5aab4c30762f.jpg",
   },
 ]
 
@@ -68,8 +84,8 @@ export function Projects() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>
-            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши варианты</p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight">Апартаменты</h2>
+            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">6 апартаментов</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight">Коллекция AURA</h2>
           </div>
           <a
             href="#contact"
@@ -80,7 +96,7 @@ export function Projects() {
           </a>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {projects.map((project, index) => (
             <article
               key={project.id}
@@ -112,7 +128,7 @@ export function Projects() {
                     {project.category} · {project.location}
                   </p>
                 </div>
-                <span className="text-foreground font-medium text-sm whitespace-nowrap">{project.year}</span>
+                <span className="text-foreground font-medium text-sm whitespace-nowrap">{project.price}</span>
               </div>
             </article>
           ))}
