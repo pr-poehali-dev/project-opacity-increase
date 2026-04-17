@@ -148,6 +148,15 @@ export function Hero() {
             <br />
             <span className="text-orange-200">{"в Анапе"}</span>
           </h1>
+
+          <div className="flex justify-center mt-10">
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 bg-white text-foreground px-8 py-4 text-sm tracking-widest uppercase font-medium hover:bg-white/90 transition-colors duration-300"
+            >
+              Забронировать
+            </a>
+          </div>
         </div>
       </div>
 
