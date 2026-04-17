@@ -31,12 +31,12 @@ export function Header() {
           : "bg-transparent py-4 top-0 left-0 right-0",
       )}
     >
-      <nav className="container mx-auto px-6 flex items-center justify-between md:px-[24]">
+      <nav className="container mx-auto px-6 flex items-center justify-center md:px-[24]">
         <a href="/" className="flex items-center gap-2 group" onClick={scrollToTop}>
           <span className="text-white text-2xl font-semibold tracking-[0.2em]">AURA</span>
         </a>
 
-        <ul className="hidden md:flex items-center gap-10 text-sm tracking-wide">
+        <ul className="hidden md:flex items-center gap-10 text-sm tracking-wide ml-10">
           {[
             { label: "Главная", href: "#hero" },
             { label: "О нас", href: "#about" },
