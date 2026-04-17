@@ -39,6 +39,7 @@ export function Header() {
             { label: "Апартаменты", href: "#projects" },
             { label: "Удобства", href: "#services" },
             { label: "Вопросы", href: "#faq" },
+            { label: "Бронирование", href: "#contact" },
           ].map((item) => (
             <li key={item.label}>
               <a
@@ -86,6 +87,7 @@ export function Header() {
               { label: "Апартаменты", href: "#projects" },
               { label: "Удобства", href: "#services" },
               { label: "Вопросы", href: "#faq" },
+              { label: "Бронирование", href: "#contact" },
             ].map((item) => (
               <li key={item.label}>
                 <a
