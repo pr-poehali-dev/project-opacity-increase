@@ -124,6 +124,7 @@ export function Hero() {
           alt="Пляж Анапы"
           className="w-full h-full object-cover object-center"
         />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <div
